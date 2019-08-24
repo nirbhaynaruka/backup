@@ -123,6 +123,21 @@ h1 {
       height: 2px;
       border:none;
   }
+  a{
+    color:white;
+  }
+  a:visited{
+    color:white;
+  }
+
+  a:active{
+    color:white;
+  }
+  a:hover{
+    color: green;
+    text-decoration: none;
+
+  }
   
   .title {
     color: green;
