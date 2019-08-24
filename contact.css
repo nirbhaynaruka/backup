@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
-header {
-    padding: 0;
-    margin: 0;
-}
-.container-fluid{
-    /* position: relative; */
-    /* background: black; */
-    height: 55px;
-}
+
 .navbar{
     background: black;
 }
@@ -52,6 +44,7 @@ header {
 
 section{
     z-index: 10;
+    margin-bottom: 20px;
 }
 .heading{
     margin: 3em 3em 0 4.5em;
@@ -108,7 +101,7 @@ section{
     color: white;
 }
 .button_submit{
-    margin-top: 10px;
+    margin-top: 15px;
     border: 2px solid white;
     border-radius: 2em;
     background: black;
@@ -116,6 +109,10 @@ section{
     width: 100px;
     height: 40px;
     font-size: 18px;
+}
+.button_submit:hover{
+    border: 3px solid green;
+    color: green;
 }
 .details{
     padding: 50px;
@@ -150,6 +147,10 @@ footer{
 }
 .icon{
     padding-left: 100px;
+}
+.quaffle_img{
+    width: 60px;
+    background:black;
 }
 #foot_icon{
     color:white;

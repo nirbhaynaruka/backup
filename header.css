@@ -3,8 +3,8 @@
     background: black;
 }
 #logo{
-height: inherit;
-margin: -15px 0 0 50px;
+width: 55%;
+padding-left: 50px;
 }
 
 .container-fluid .navbar.navbar-expand-lg .nav-link {

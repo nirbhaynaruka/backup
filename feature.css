@@ -1,21 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
 body {
-    margin: 0;
-    padding: 0;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
-
-header {
     padding: 0;
     margin: 0;
-}
-
-.container-fluid {
-    /* position: relative; */
-    background: black;
-    height: 55px;
 }
 
 .navbar {
@@ -70,10 +57,14 @@ header {
 }
 
 .feat_head>h3 {
-    padding-top: 70px;
+    padding-top: 30px;
     font-size: 4em;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+}
+.new_image>img{
+    width: 50%;
+    margin-bottom: -40px;
 }
 
 #head {
@@ -85,7 +76,7 @@ header {
 .feature3 {
     background: black;
     color: white;
-    margin: 2em 0 1em 0;
+    margin: 1em 0 1em 0;
     height: 400px;
 }
 
@@ -156,6 +147,10 @@ footer {
 
 .icon {
     padding-left: 100px;
+}
+.quaffle_img{
+    width: 60px;
+    background:black;
 }
 
 #foot_icon {
