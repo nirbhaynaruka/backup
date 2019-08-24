@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>amazing navbar</title>
+    <link rel="icon" href="Website Template/logo.jpg">
+    <title>Home</title>
     <style>
      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 * {
@@ -15,7 +16,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-  background-image: url(dotted-world-black-.jpg);
+  background-image: url("Website Template/world.jpeg");
   margin: 0;
     background-size: cover;
     animation: marquee 120s infinite linear;
@@ -99,7 +100,7 @@ nav li {
 nav a {
   display: block;
   text-decoration: none;
-  background: #00FF00;
+  background: green;
   transform-origin: 0 0;
   transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
   transition-delay: var(--delay-out);
@@ -112,9 +113,9 @@ nav a:hover {
 nav .sub-menu a {
   font-size: .9em;
   color: #666666;
-  border-left: 2em #00FF00;
+  border-left: 2em green;
   padding: .75em;
-  background: #00FF00;
+  background: green;
 }
 nav .sub-menu a:hover {
   background: linear-gradient(to right, #dddddd 2px, #efefef 2px);
@@ -122,7 +123,7 @@ nav .sub-menu a:hover {
 nav header {
   font-weight: 600;
   display: block;
-  background: #00FF00;
+  background: green;
   transform-origin: 0 0;
   transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
   transition-delay: var(--delay-out);
@@ -169,23 +170,17 @@ nav.closed footer button {
 </head>
 <body>
 	<div id="loading" >
-		<div id="loading" ><div id="loading-image" ><img src="Website Template/backup_logo.jpg" width="40%" height="50%"></div></div>
+		<div id="loading" ><div id="loading-image" ><img src="Website Template/backup_logo.jpg" width="50%" height="50%"></div></div>
 	</div>
 	<nav class="menu">
     <header>Menu <span>×</span></header>
     <ol>
-        <li class="menu-item"><a href="#0">Home</a></li>
-        <li class="menu-item"><a href="#0">About Us</a></li>
+        <li class="menu-item"><a href="home.html">Home</a></li>
+        <li class="menu-item"><a href="aboutus.html">About Us</a></li>
         <li class="menu-item">
-            <a href="#0">Our Features</a>
-            <ol class="sub-menu">
-                <li class="menu-item"><a href="#0">Gamified Experience</a></li>
-                <li class="menu-item"><a href="#0">Performance Reports</a></li>
-                <li class="menu-item"><a href="#0">Continuous Process</a></li>
-            </ol>
+            <a href="feature.html">Our Features</a>
         </li>
-        <li class="menu-item"><a href="#0">Our Team</a></li>
-        <li class="menu-item"><a href="#0">Contact Us</a></li>
+        <li class="menu-item"><a href="contact.html">Contact Us</a></li>
     </ol>
     <footer><button aria-label="Toggle Menu">Toggle</button></footer>
 </nav> 
