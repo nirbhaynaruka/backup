@@ -5,21 +5,25 @@ body{
 }
  
 .product{
-    margin: 3em;
+    margin: 3em 3em 3em 4.5em;
 }
 .feat_head>h3{
+    padding-top: 70px;
     font-size: 4em;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
-
+#head{
+    width: 250px;
+}
 .feature1 , .feature2 , .feature3{
     background: black;
     color: white;
     margin: 2em 0 1em 0;
+    height: 400px;
 }
 .content{
-    padding: 30px;
+    padding: 50px;
 }
 .content>h4{
     font-family: 'Poppins', sans-serif;
@@ -31,6 +35,9 @@ body{
 .content>hr{
     background: green;
     height: 3px;
+    margin-right:50%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .content>p{
     font-size: 20px
@@ -38,7 +45,7 @@ body{
 
 .contact_us{
     text-align: -webkit-center;
-    margin: 50px;
+    margin: 50px 0 10px 0;
 }
 
 .contact_us>h4{
@@ -46,7 +53,11 @@ body{
     font-family: 'Poppins', sans-serif;
     padding: 15px;
 }
-
+.feature_img{
+    height: 280px;
+    width: 300px;
+    margin: 55px 0 0 200px;
+}
 #contact{
     border: none;
     /* border: 3px solid green; */
@@ -61,5 +72,18 @@ body{
 .contact_us>p{
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
-    padding: 15px;
+    padding: 15px 0 5px 0;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding-top: 20px;
+}
+.icon{
+    padding-left: 100px;
+}
+#foot_icon{
+    color:white;
+    padding-left: 10px;
 }
