@@ -1,221 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="Website Template/logo.jpg">
-    <title>Home</title>
-    <style>
-     @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
-* {
-  font-family: 'Open Sans', sans-serif;
-  box-sizing: border-box;
-  color: #333;
-  font-size: 100%;
-  line-height: 1.5;
-}
-body {
-	display: flex;
-	flex-direction: column;
-  background-image: url("Website Template/world.jpeg");
-  margin: 0;
-    background-size: cover;
-    animation: marquee 120s infinite linear;
-}
-@keyframes marquee {
-  0% {
-    background-position: 0;
-  }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../Website Template/backup_logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../animation.css">
+    <!-- <script src/="aboutus.js"></script> -->
+    <title>About Us</title>
+    <script>
+        $(document).ready(function () {
+            $("#hidden1").fadeIn(3000);
+            $("#hidden2").fadeIn(3000);
+        });
 
-  50% {
-    background-position: -1190px;
-  }
-  100%{
-  	background-position: 0;
-  }
-}
-#loading {
-	visibility: hidden;
-	animation: fade 8s;
-	width: 100%;
-	height: 100%;
-	top: 0px;left: 0px;
-	position: fixed;
-	display: block;
-	background-color: black;
-	z-index: 1}
+    </script>
 
-#loading-image {
-	animation:fading 8s;
-	visibility: hidden;
-	position: absolute;
-	height: 60%;
-	width: 60%;
-	top: 30%;
-	left: 35%;
-	z-index: 1
-}
-@keyframes fade {
-	0%{opacity: 100;
-		visibility: visible;}
-	99%{opacity: 100;
-		visibility: visible;}
-	100%{opacity:0
-		visibility: hidden;}
-}
-@keyframes fading { 
-			0%{opacity:0;
-				visibility: visible;}
-			12.5%{opacity:100;
-				visibility: visible;}
-			25%{opacity:0;
-				visibility: visible;}
-			37.5%{opacity:100;
-				visibility: visible;}
-			50%{opacity:0;
-				visibility: visible;}
-			62.5%{opacity:100;
-				visibility: visible;}
-			75%{opacity:0;
-				visibility: visible;}
-				87.5%{opacity:100;
-				visibility: visible;}
-			100%{opacity:0;
-				visibility: hidden;}
-		}
-nav {
-  --duration: .5s;
-  --easing: ease-out;
-  position: relative;
-  width: 220px;
-  margin: 20px;
-}
-nav ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-nav li {
-  margin: -4px 0 0 0;
-}
-nav a {
-  display: block;
-  text-decoration: none;
-  background: green;
-  transform-origin: 0 0;
-  transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
-  transition-delay: var(--delay-out);
-  border-radius: 4px;
-  padding: 1em 1.52em;
-}
-nav a:hover {
-  background: #efefef;
-}
-nav .sub-menu a {
-  font-size: .9em;
-  color: #666666;
-  border-left: 2em green;
-  padding: .75em;
-  background: green;
-}
-nav .sub-menu a:hover {
-  background: linear-gradient(to right, #dddddd 2px, #efefef 2px);
-}
-nav header {
-  font-weight: 600;
-  display: block;
-  background: green;
-  transform-origin: 0 0;
-  transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
-  transition-delay: var(--delay-out);
-  border-radius: 4px;
-  padding: 1em 1.52em;
-}
-nav header span {
-  border: none;
-  background: transparent;
-  font-size: 1.5em;
-  padding: 0;
-  cursor: pointer;
-  line-height: 1;
-  float: right;
-}
-nav footer button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: none;
-  padding: calc(1em - 2px);
-  width: 100%;
-  transform-origin: 0 0;
-  transition: transform var(--duration) var(--easing);
-  transition-delay: calc(var(--duration) + (.1s * (var(--count) / 2)));
-  cursor: pointer;
-  outline: none;
-  background: #cdcdcd;
-  opacity: 0;
-}
-nav.closed a,
-nav.closed header {
-  transform: translateY(calc(var(--top) * -1)) scaleY(0.1) scaleX(0.2);
-  transition-delay: var(--delay-in);
-  color: transparent;
-}
-nav.closed footer button {
-  transition-delay: 0s;
-  transform: scaleY(0.7) scaleX(0.2);
-}
-
-    
-    </style>
 </head>
-<body>
-	<div id="loading" >
-		<div id="loading" ><div id="loading-image" ><img src="Website Template/backup_logo.jpg" width="50%" height="50%"></div></div>
-	</div>
-	<nav class="menu">
-    <header>Menu <span>×</span></header>
-    <ol>
-        <li class="menu-item"><a href="#">Home</a></li>
-        <li class="menu-item"><a href="html/aboutus.html">About Us</a></li>
-        <li class="menu-item">
-            <a href="html/feature.html">Our Features</a>
-        </li>
-        <li class="menu-item"><a href="html/contact.html">Contact Us</a></li>
-    </ol>
-    <footer><button aria-label="Toggle Menu">Toggle</button></footer>
-</nav> 
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script>
+
+<body >
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="../Website Template/backup_logo.jpg" alt="logo.jpg" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" id="button_head"><a class="nav-link" href="../index.html">Home <span
+                                    class="sr-only">(current)</span></button></a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" id="button_head"><a class="nav-link" href="aboutus.html">About
+                                Us</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" id="button_head"><a class="nav-link"
+                                href="feature.html">Product</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" id="button_head"><a class="nav-link"
+                                href="contact.html">Contact</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <section class="parallax">
+
+            <div class="row" style="text-align:-webkit-center;margin-top:147px">
+                <div class="col-md-7">
+                    <div id="hidden1" class="animation-element slide-left testimonial" >
+                        <h1 style="text-align: center;">About <span style="color:#045a0a;">Us</span></h1>
+                    </div>
+
+                </div>
+                <div class="animation-element slide-right testimonial">
+                    <img class="imgAnimation" src="../Website Template/aboutus.jpg" style="width:465px;height:233px;">
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" style="color:white;background-color:black">
+            <div class="row">
+                <div style="background-color: #045a0a;padding-right: 40px;"></div>
+                <div class="col-md-11">
+                    <div class="cssanimation sequence fadeInBottom"
+                        style="text-align: justify;line-height: 1.6;padding: 41px;">
+                        <p>
+                            At Essay-Company.com, a special quality assurance team guarantees that all the papers are
+                            plagiarism-free and meet the standards or specific requirements of certain academic
+                            institutions (these may vary, you know, and they may vary even between different teachers).
+                            Upon placing an order, you can communicate with your writer during the entire process and
+                            even after it is completed.
+                            This ensures a customized service, meeting the exact needs and expectations of any, even the
+                            most demanding customers.these may vary, you know, and they may vary even between different
+                            teachers). Upon placing an order, you can communicate with your writer during the entire
+                            process and evay vary, you know, and they may vary even between different teachers). Upon
+                            placing an order, you can communi
+                        </p>
+                        <p>
+                            At Essay-Company.com, a special quality assurance team guarantees that all the papers are
+                            plagiarism-free and meet the standards or specific requirements of certain academic
+                            institutions (these may vary, you know, and they may vary even between different teachers).
+                            Upon placing an order, you can communicate with your writer during the entire process and
+                            even after it is completed.
+                            This ensures a customized service, meeting the exact needs and expectations of any, even the
+                            most demanding customers.these may vary, you know, and they may vary even between different
+                            teachers). Upon placing an order, you can communicate with your writer during the entire
+                            process and evay vary, you know, and they may vary even between different teachers). Upon
+                            placing an order, you can communi
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <button id="more">Learn
+                            More...</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <div class="row" style="text-align:-webkit-center;margin-top:147px">
+                <div class="col-md-7">
+                    <div id="hidden2" class="animation-element slide-left testimonial">
+                        <h1 style="text-align: center;">Our <span style="color:#045a0a;">Team</span></h1>
+                    </div>
+
+                </div>
+                <div class="col-md-5">
+                    <img class="animation-element slide-right testimonial" style="width:465px;height:233px;"
+                        src="../Website Template/ourteam.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" style="color:white;background-color:black;">
+                <div class="row">
     
-   var $els = $('.menu a, .menu header');
-var count = $els.length;
-var grouplength = Math.ceil(count/3);
-var groupNumber = 0;
-var i = 1;
-$('.menu').css('--count',count+'');
-$els.each(function(j){
-    if ( i > grouplength ) {
-        groupNumber++;
-        i=1;
-    }
-    $(this).attr('data-group',groupNumber);
-    i++;
-});
+                    <div style="padding-left:40px;background-color: #045a0a;"></div>
+                    <div class="col-md-5 row animation-element slide-left testimonial" style="margin:5px;">
 
-$('.menu footer button').on('click',function(e){
-    e.preventDefault();
-    $els.each(function(j){
-        $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 20);
-        $(this).css('--delay-in',j*.1+'s');
-        $(this).css('--delay-out',(count-j)*.1+'s');
-    });
-    $('.menu').toggleClass('closed');
-    e.stopPropagation();
-});
+                        <div class="col-md-4"> <img src="../Website Template/tushar.png"
+                                style="width:80%;margin:30px 0 0 20px;border-radius: 50%;">
+                            
+                            </div>
+                        <div class="col-md-8" style="margin-top:35px;">
+                            <h3> Tushar Narula,&nbsp;<span style="color:green;">CEO</span>
+                                <hr style="width:50%;margin:0;background: #045a0a;">
+                            </h3>
+                           <a href="mailto:tusharnarula98@gmail.com">tusharnarula98@gmail.com</a><br>
+                           <a href="tel:+919899070184">+91 9899070184</a>
+                            
+                        </div>
+                        
+                        <div >
+                                <p style="color:white;text-align: center;padding:5px">Tushar is a student at UC Berkely and has a profound background in
+                                        research,business,data analytics and sustainable strategy.</p>
+                        </div>    
+        
+                        <div>
+    
+                        </div>
+                    </div>
+                    <div class="col-md-5 row animation-element slide-right testimonial" style="margin: 5px;">
+                        <div class="col-md-4"> <img src="../Website Template/anshul.png"
+                                style="width:80%;margin:30px 0 0 20px;border-radius: 50%;"></div>
+                        <div class="col-md-8" style="margin-top:35px">
+                            <h3> Anshul Jain, &nbsp;<span style="color:green;">CTO</span>
+                                <hr style="width:40%;margin:0;background: #045a0a;">
+                            </h3>
+                            <a href="mailto:anshul121998@gmail.com">Anshul121998@gmail.com</a>
+                            <br>
+                            <a href="tel:+91 8510075928">+91 8510075928</a>
+                           
+                           
+                        </div>
+                        <div>
+                                <p style="color:white;text-align: center;">Anshul has a background in computer science and has a good understanding
+                                        of game mechanics and general cyber threats.</p>
+                        </div>
 
-// run animation once at beginning for demo
-setTimeout(function(){
-    $('.menu footer button').click();
-    }, 1000);
-</script>
+                        <div>
+                        </div>
+    
+                </div>
+               
+                </div>
+    
+                </div>
+            </section>
+    
+
+        <section class="container-fluid"
+            style="text-align: center;font-family: 'Poppins', sans-serif;font-size: 1.5em;padding: 15px;">
+            <div>
+                <p style="font-weight: bold;">Need more details? Contact us</p>
+                <button id="contact"><a href="../html/contact.html">Contact Us</a></button>
+                <p>We are here to assist.Contact us by Phone,E-mail or via our Social Media channels.</p>
+            </div>
+        </section>
+    </div>
+    <footer class="container-fluid ">
+        <div class="row">
+            <div class="col-md-6 icon">
+                <a href="#"><i class="fab fa-facebook-f fa-2x" id="foot_icon"></i></a>
+                <a href="#" style="margin:0 15px 0 15px"><i class="fab fa-instagram fa-2x" id="foot_icon"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x" id="foot_icon"></i></a>
+            </div>
+            <div class="col-md-6" style="text-align: end; padding-right:120px;font-size:1.5em;">
+                <p>
+                    Powered by <span><img src="../Website Template/quaffle.jpg" alt="quaffle.jpg" class="quaffle_img"></span> <span style="font-weight: bold;color:green;">Quaffle</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/animation.js"></script>
+  
 </body>
+
+</html>
